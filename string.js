@@ -1,4 +1,6 @@
 
+
+
 // Release 1
 var getString = function(){
   return "A string, huzzah!";
