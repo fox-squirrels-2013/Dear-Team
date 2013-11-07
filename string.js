@@ -28,6 +28,7 @@ var getString = function(){
 var randomIndex = function(last_index){
    return Math.floor((Math.random()*last_index));
 };
+// NEAT IDEA!
 
 console.log(randomIndex(4));
 console.log(getString());
