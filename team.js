@@ -23,3 +23,23 @@ document.write(" You took " + elapsed + " seconds" + " to type: " + response + "
 // // compare test_phrase to input and return accuracy
 // //return accuracy
 // console.log("Your score was " + accuracy)
+
+//_________________________miya____________________________
+// ACCURACY FUNCTION
+// assigning correct and incorrect variable to start at 0
+var correct = 0;
+var incorrect = 0;
+
+// assuming Lindsey's code will return a "result" true or false at each compared letter
+//var result = true;
+
+function accuracy(result) {
+  if (result) {
+    correct += 1;
+    return correct
+  }
+  else {
+    incorrect += 1;
+    return incorrect
+  }
+}
