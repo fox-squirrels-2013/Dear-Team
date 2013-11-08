@@ -1,3 +1,10 @@
+// At the top of script, just going to have a list of variables the program uses
+var timeTakenToFinish
+var wrongEntryCount
+var correctEntryCount
+var currentIndex
+
+
 $( document ).ready(function() {
 
 
