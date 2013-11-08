@@ -2,8 +2,8 @@
 var timeTakenToFinish
 var wrongEntryCount
 var correctEntryCount
-var currentIndex
-
+var currentIndex = 0
+var test_string
 
 $( document ).ready(function() {
 
