@@ -30,16 +30,22 @@ $( document ).ready(function() {
 // //return accuracy
 // console.log("Your score was " + accuracy)
 
+//_________________________miya____________________________
+// ACCURACY FUNCTION
+// assigning correct and incorrect variable to start at 0
+var correct = 0;
+var incorrect = 0;
 
-var test_string = getString();
+// assuming Lindsey's code will return a "result" true or false at each compared letter
+//var result = true;
 
-var currentIndex = 1
-
-
-----Comparison
-user input = whatever they typed (single character)
-user_input === test_string[0]
-
--------change index
-
-------
+function accuracy(result) {
+  if (result) {
+    correct += 1;
+    return correct
+  }
+  else {
+    incorrect += 1;
+    return incorrect
+  }
+}
