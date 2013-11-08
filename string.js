@@ -29,3 +29,21 @@ var randomIndex = function(list_length){
 
 console.log(randomIndex(4));
 console.log(getString());
+
+// When the last test character returns true
+
+var gameFinished = function(){
+    if (test_string.length <= currentIndex){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+var test_string = "toast"
+var currentIndex = 5
+console.log(gameFinished())
+
+var currentIndex = 3
+console.log(gameFinished())
