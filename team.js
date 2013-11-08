@@ -23,3 +23,17 @@ document.write(" You took " + elapsed + " seconds" + " to type: " + response + "
 // // compare test_phrase to input and return accuracy
 // //return accuracy
 // console.log("Your score was " + accuracy)
+
+
+var test_string = getString();
+
+var currentIndex = 1
+
+
+----Comparison
+user input = whatever they typed (single character)
+user_input === test_string[0]
+
+-------change index
+
+------

@@ -23,8 +23,8 @@ var getString = function(){
   return test_list[randomIndex(test_list.length)];
 };
 
-var randomIndex = function(last_index){
-   return Math.floor((Math.random()*last_index));
+var randomIndex = function(list_length){
+   return Math.floor((Math.random()*list_length));
 };
 
 console.log(randomIndex(4));
