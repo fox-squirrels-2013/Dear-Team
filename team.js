@@ -53,22 +53,22 @@ var end = Date.now();
 
 // accuracy(result)
 
-var accuracy_counter = document.getElementById('accuracy_score');
-accuracy_counter.innerHTML = 'this will be the accuracy score'
+// var accuracy_counter = document.getElementById('accuracy_score');
+// accuracy_counter.innerHTML = 'this will be the accuracy score'
 
-var time_counter = document.getElementById('time');
-time_counter.innerHTML = elapsed
+// var time_counter = document.getElementById('time');
+// time_counter.innerHTML = elapsed
 
-var correct_counter = document.getElementById('correct_score');
-correct_counter.innerHTML = correct
+// var correct_counter = document.getElementById('correct_score');
+// correct_counter.innerHTML = correct
 
-var incorrect_counter = document.getElementById('incorrect_score');
-incorrect_counter.innerHTML = incorrect
+// var incorrect_counter = document.getElementById('incorrect_score');
+// incorrect_counter.innerHTML = incorrect
 
-var string_display = document.getElementById('test_string');
-string_display.innerHTML = "this will connect to the 'getString' function / HTML 'test_string'"
+// var string_display = document.getElementById('test_string');
+// string_display.innerHTML = "this will connect to the 'getString' function / HTML 'test_string'"
 
-var game_finished_display = document.getElementById('game_finished');
-game_finished_display.innerHTML = "this will connect to the 'gameFinished?'' function / HTML"
+// var game_finished_display = document.getElementById('game_finished');
+// game_finished_display.innerHTML = "this will connect to the 'gameFinished?'' function / HTML"
 
 }

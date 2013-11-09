@@ -14,7 +14,7 @@ var wrongEntryCount = 0
 var correctEntryCount = 0
 var currentIndex = 0
 
-var test_list = ["Get a dog up ya flanno mate built like a paddock",
+var testList = ["Get a dog up ya flanno mate built like a paddock",
             "He's got a massive esky, he hasn't got a kelpie",
             "A peculiar and not very pleasant smell was smelt in the sea",
             "Yes, I'm for it; and so saying he started for the quarter-deck.",
@@ -29,15 +29,15 @@ var test_list = ["Get a dog up ya flanno mate built like a paddock",
             "He's got a massive rort with she'll be right mate's rate"];
 
 var getString = function(){
-  return test_list[randomIndex(test_list.length)];
+  return testList[randomIndex(testList.length)];
 };
 
-var randomIndex = function(list_length){
-   return Math.floor((Math.random()*list_length));
+var randomIndex = function(listLength){
+   return Math.floor((Math.random()*listLength));
 };
 
 var gameFinished = function(){
-    if (test_string.length <= currentIndex){
+    if (testString.length <= currentIndex){
         return true;
     }
     else {
@@ -49,14 +49,18 @@ function accuracy(result) {
   if (result) {
     currentIndex += 1
     correctEntryCount += 1;
+    var correct_counter = document.getElementById('correct_score');
+    correct_counter.innerHTML = correctEntryCount
   }
   else {
     wrongEntryCount += 1;
+    var incorrect_counter = document.getElementById('incorrect_score');
+    incorrect_counter.innerHTML = wrongEntryCount
   }
 }
 
-function test_char(test_string){
-  return test_string[currentIndex]
+function testChar(testString){
+  return testString[currentIndex]
 }
 
 function printCharToScreen(status, character){
@@ -73,40 +77,47 @@ function displayString(string){
   console.log(string)
 }
 
+
+
 // IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 // EXISITING CODE BASE
 
 
-
 window.onload=function(){
 
-var test_string = getString()
-
-function run() {
-  // var test_string = getString() // returns a string
-  displayString(test_string) // return nothing, manipulates the DOM
-
-window.addEventListener('keypress', function(e){
-   var character = String.fromCharCode(e.keyCode)
-   evaluate_loop(character)
-})
-
-  // while currentIndex <= string.length // or maybe until finished?
-var evaluate_loop = function(capturedKeystroke){
+var evaluateLoop = function(capturedKeystroke){
     if (! gameFinished()){
-      var currentChar = test_char(test_string) //returns test character
-      // Nuked the assignment like for capturedKeystroke and just put it straight into comparison //returns keystroke
+      var currentChar = testChar(testString) 
 
       var charsMatch = comparison(currentChar, capturedKeystroke)
       accuracy(charsMatch)
       printCharToScreen(charsMatch, capturedKeystroke)
-      }
-    // gameFinished() // not sure what the finished method recieves as an argument
-    }
+    } 
+} 
+
+var input = alert("Go!")
+var start = Date.now();
+
+var testString = getString()
+
+var stringDisplay = document.getElementById('testString');
+stringDisplay.innerHTML = testString
+
+function run() {
+  displayString(testString) 
+
+  window.addEventListener('keypress', function(e){  
+    var character = String.fromCharCode(e.keyCode)
+    evaluateLoop(character)
+
+    var end = Date.now();
+
+    var time_counter = document.getElementById('time');
+    time_counter.innerHTML = (end - start)/1000
+
+  }) 
 }
   
 run()
 
-//NOT SURE HOW OR WHERE THESE NEED TO BE IMPLEMENTED
-// function timeMethod()
 }
