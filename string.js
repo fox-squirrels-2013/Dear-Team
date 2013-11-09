@@ -43,7 +43,10 @@ var gameFinished = function(){
 
 var test_string = "toast"
 var currentIndex = 5
-console.log(gameFinished())
+console.log("finished! " +gameFinished())
+
+var currentIndex = 4
+console.log(test_string[currentIndex] + " " +gameFinished())
 
 var currentIndex = 3
-console.log(gameFinished())
+console.log(test_string[currentIndex] + " " +gameFinished())
