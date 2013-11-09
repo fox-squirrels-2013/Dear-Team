@@ -1,11 +1,11 @@
-// At the top of script, just going to have a list of variables the program uses
-var timeTakenToFinish
-var wrongEntryCount
-var correctEntryCount
-var currentIndex = 0
-var test_string
+// // At the top of script, just going to have a list of variables the program uses
+// var timeTakenToFinish
+// var wrongEntryCount
+// var correctEntryCount
+// var currentIndex = 0
+// var test_string
 
-window.onload=function(){
+// window.onload=function(){
 
 //var test_phrase = "Hello World"
 
@@ -34,23 +34,24 @@ var end = Date.now();
 
 // ACCURACY FUNCTION
 
-var correct = 0;
-var incorrect = 0;
+// var correct = 0;
+// var incorrect = 0;
 
-var result = true
+// var result = true
 
-function accuracy(result) {
-  if (result) {
-    correct += 1;
-    return correct
-  }
-  else {
-    incorrect += 1;
-    return incorrect
-  }
-}
+// function accuracy(result) {
+//   if (result) {
+//     correct += 1;
+//     return correct
+//   }
+//   else {
+//     incorrect += 1;
+//     return incorrect
+//   }
+// }
 
-accuracy(result)
+
+// accuracy(result)
 
 var accuracy_counter = document.getElementById('accuracy_score');
 accuracy_counter.innerHTML = 'this will be the accuracy score'
