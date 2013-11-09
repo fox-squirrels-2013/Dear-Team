@@ -48,9 +48,18 @@ console.log(gameFinished())
 var currentIndex = 3
 console.log(gameFinished())
 
+var game ={
+    checkKey:function (key){
+    console.log(key)
+    },
+    complete:false
+}
+
 
 var char = ''
 window.addEventListener('keypress', function(e){
    var char = String.fromCharCode(e.keyCode)
-   console.log(char)
+   // console.log(char)
+   game.checkKey(char)
+
 })
