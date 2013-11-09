@@ -43,9 +43,13 @@ var gameFinished = function(){
 
 var test_string = "toast"
 var currentIndex = 5
-console.log(gameFinished())
+console.log("finished! " +gameFinished())
+
+var currentIndex = 4
+console.log(test_string[currentIndex] + " " +gameFinished())
 
 var currentIndex = 3
+
 console.log(gameFinished())
 
 var game ={
@@ -55,7 +59,6 @@ var game ={
     complete:false
 }
 
-
 var char = ''
 window.addEventListener('keypress', function(e){
    var char = String.fromCharCode(e.keyCode)
@@ -63,3 +66,6 @@ window.addEventListener('keypress', function(e){
    game.checkKey(char)
 
 })
+
+console.log(test_string[currentIndex] + " " +gameFinished())
+

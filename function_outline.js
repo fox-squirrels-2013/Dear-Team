@@ -14,7 +14,7 @@ currentIndex = 0
 
 ///this gets current test string letter
 // i: Is the current testing index
-var test_char = function(currentIndex){
+function test_char(currentIndex){
   return teststring[currentIndex]
 }
 // o: a single character - string format
@@ -22,37 +22,39 @@ var test_char = function(currentIndex){
 //keystroke happens
 
 //i: event handler
-var capturedKeystroke = function() {
+function capturedKeystroke() {
   //function that captures keystroke
 }
 //o: a single letter - string format
 
 //i: true/false
-var prevent_typing_to_screen = function {
+function preventTypingToScreen(){
   //manage how to prevent printing to screen (t/f)
 }
 //o: DOM
 
 //i: test char and keystroke
-var comparison = function() {
+function comparison() {
   // compare the two letters, if true increase counter by one
 }
 //o: t/f
 
+function accuracy() {
+  //increase accuracy counters
+}
+
 //i: call
-var finished? = function() {
+function finished() {
   //checks to see if cuurent index = length of string
 }
 //o: if true DOM prints to screen FINISHED, else repeats loop
 
 //i: t/f
-var accuracy_junk = function() {
-  //increase accuracy counters
-}
+
 //o: DOM
 
 //i:
-var time_method = function() {
+var timeMethod = function() {
   //
 }
 //o: seconds for completion
