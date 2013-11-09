@@ -50,6 +50,7 @@ function accuracy(result) {
   }
 }
 
+
 accuracy(result)
 
 var accuracy_counter = document.getElementById('accuracy_score');
