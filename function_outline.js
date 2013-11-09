@@ -10,12 +10,12 @@ display string(teststring)
 
 ///At this point, we assume that the DOM has taken care of printing the appropriate elements to the screen
 
-currentIndex = 0
+// currentIndex = 0
 
 ///this gets current test string letter
 // i: Is the current testing index
-function test_char(currentIndex){
-  return teststring[currentIndex]
+// function test_char(currentIndex){
+//   return teststring[currentIndex]
 }
 // o: a single character - string format
 

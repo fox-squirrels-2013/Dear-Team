@@ -80,8 +80,10 @@ function displayString(string){
 
 window.onload=function(){
 
+var test_string = getString()
+
 function run() {
-  var test_string = getString() // returns a string
+  // var test_string = getString() // returns a string
   displayString(test_string) // return nothing, manipulates the DOM
 
 window.addEventListener('keypress', function(e){
@@ -91,13 +93,15 @@ window.addEventListener('keypress', function(e){
 
   // while currentIndex <= string.length // or maybe until finished?
 var evaluate_loop = function(capturedKeystroke){
-    var currentChar = test_char(test_string) //returns test character
-    // Nuked the assignment like for capturedKeystroke and just put it straight into comparison //returns keystroke
+    if (! gameFinished()){
+      var currentChar = test_char(test_string) //returns test character
+      // Nuked the assignment like for capturedKeystroke and just put it straight into comparison //returns keystroke
 
-    var charsMatch = comparison(currentChar, capturedKeystroke)
-    accuracy(charsMatch)
-    printCharToScreen(charsMatch, capturedKeystroke)
-    gameFinished() // not sure what the finished method recieves as an argument
+      var charsMatch = comparison(currentChar, capturedKeystroke)
+      accuracy(charsMatch)
+      printCharToScreen(charsMatch, capturedKeystroke)
+      }
+    // gameFinished() // not sure what the finished method recieves as an argument
     }
 }
   
