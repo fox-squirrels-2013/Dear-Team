@@ -47,3 +47,10 @@ console.log(gameFinished())
 
 var currentIndex = 3
 console.log(gameFinished())
+
+
+var char = ''
+window.addEventListener('keypress', function(e){
+   var char = String.fromCharCode(e.keyCode)
+   console.log(char)
+})
