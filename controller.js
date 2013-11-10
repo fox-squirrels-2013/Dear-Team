@@ -14,19 +14,29 @@ var wrongEntryCount = 0
 var correctEntryCount = 0
 var currentIndex = 0
 
-var testList = ["Cupcake jujubes candy chocolate bar!", 
-                "Sugar plum chupa chups brownie!",
-                "Jujubes muffin carrot cake tootsie roll topping!", 
-                "Lemon drops muffin sweet bonbon jelly chocolate cake!", 
-                "Cupcake sweet donut chocolate cheesecake!",
-                "Sesame snaps tootsie roll sweet roll!", 
-                "Cheesecake lemon drops fruitcake!", 
-                "Cookie macaroon wafer candy canes!", 
-                "Sugar plum sweet roll bear claw!", 
-                "Cake halvah muffin jelly beans!",
-                "Lollipop carrot cake cake jelly cotton candy!",
-                "Marshmallow sweet bonbon lollipop pie apple pie!", 
-                "Cookie jujubes apple pie cupcake!"];
+var testList = ["Holystone keel coffer galleon keelhaul gangplank.",
+                "Gabion Admiral of the Black rigging Privateer hearties walk the plank.", 
+                "Take a caulk spirits killick bilge rat red ensign hornswaggle.", 
+                "Poop deck Plate Fleet reef sails mizzenmast hulk gibbet.", 
+                "Hearties mizzen grapple Davy Jones' Locker deadlights dance the hempen jig.", 
+                "Fluke schooner gaff poop deck Jack Tar ye.", 
+                "Bilge rat gaff gibbet bilged on her anchor gun case shot.", 
+                "Hearties parley hempen halter black jack loaded to the gunwalls lookout.", 
+                "Blimey fire ship fathom Davy Jones' Locker loot lookout."]
+
+                // "Cupcake jujubes candy chocolate bar!", 
+                // "Sugar plum chupa chups brownie!",
+                // "Jujubes muffin carrot cake tootsie roll topping!", 
+                // "Lemon drops muffin sweet bonbon jelly chocolate cake!", 
+                // "Cupcake sweet donut chocolate cheesecake!",
+                // "Sesame snaps tootsie roll sweet roll!", 
+                // "Cheesecake lemon drops fruitcake!", 
+                // "Cookie macaroon wafer candy canes!", 
+                // "Sugar plum sweet roll bear claw!", 
+                // "Cake halvah muffin jelly beans!",
+                // "Lollipop carrot cake cake jelly cotton candy!",
+                // "Marshmallow sweet bonbon lollipop pie apple pie!", 
+                // "Cookie jujubes apple pie cupcake!"];
 
 var getString = function(){
   return testList[randomIndex(testList.length)];
