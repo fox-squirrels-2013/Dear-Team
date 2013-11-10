@@ -14,7 +14,7 @@ var wrongEntryCount = 0
 var correctEntryCount = 0
 var currentIndex = 0
 
-var testList = ["met cupcake jujubes candy chocolate bar!", 
+var testList = ["Cupcake jujubes candy chocolate bar!", 
                 "Sugar plum chupa chups brownie!",
                 "Jujubes muffin carrot cake tootsie roll topping!", 
                 "Lemon drops muffin sweet bonbon jelly chocolate cake!", 
