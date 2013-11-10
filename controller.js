@@ -14,19 +14,13 @@ var wrongEntryCount = 0
 var correctEntryCount = 0
 var currentIndex = 0
 
-var testList = ["Get a dog up ya flanno mate built like a paddock",
-            "He's got a massive esky, he hasn't got a kelpie",
-            "A peculiar and not very pleasant smell was smelt in the sea",
-            "Yes, I'm for it; and so saying he started for the quarter-deck.",
-            "The upper part of her stem-piece was carved in the likeness of a huge drooping stalk'",
-            "Get a dog up ya barbie. Also he hasn't got a chance to hit the turps",
-            "Then later, Leela made the film",
-            "And you will know My name is the Lord when I lay My vengeance upon thee.",
-            "Do you see any Teletubbies in here?",
-            "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.",
-            "Enough about your promiscuous mother, Hermes!",
-            "Why not indeed! I meant 'physically'. Look, perhaps you could let me work for a little food?",
-            "He's got a massive rort with she'll be right mate's rate"];
+var testList = ["If I don't kill a man every now and then, they forget who I am.",
+                "There's never a man looked me between the eyes and seen a good day a'terward.",
+                "Yo ho, yo ho, the frisky plank, You walks along it so, Till it goes down and you goes down To Davy Jones below!",
+                "Good night. Good work. Sleep well. I'll most likely kill you in the morning.",
+                "Better were the days when mastery of seas came not from bargains struck with eldritch creatures."]
+
+
 
 var getString = function(){
   return testList[randomIndex(testList.length)];
