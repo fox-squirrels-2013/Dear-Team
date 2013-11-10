@@ -14,19 +14,19 @@ var wrongEntryCount = 0
 var correctEntryCount = 0
 var currentIndex = 0
 
-var testList = ["Get a dog up ya flanno mate built like a paddock",
-            "He's got a massive esky, he hasn't got a kelpie",
-            "A peculiar and not very pleasant smell was smelt in the sea",
-            "Yes, I'm for it; and so saying he started for the quarter-deck.",
-            "The upper part of her stem-piece was carved in the likeness of a huge drooping stalk'",
-            "Get a dog up ya barbie. Also he hasn't got a chance to hit the turps",
-            "Then later, Leela made the film",
-            "And you will know My name is the Lord when I lay My vengeance upon thee.",
-            "Do you see any Teletubbies in here?",
-            "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.",
-            "Enough about your promiscuous mother, Hermes!",
-            "Why not indeed! I meant 'physically'. Look, perhaps you could let me work for a little food?",
-            "He's got a massive rort with she'll be right mate's rate"];
+var testList = ["Cupcake jujubes candy chocolate bar!", 
+                "Sugar plum chupa chups brownie!",
+                "Jujubes muffin carrot cake tootsie roll topping!", 
+                "Lemon drops muffin sweet bonbon jelly chocolate cake!", 
+                "Cupcake sweet donut chocolate cheesecake!",
+                "Sesame snaps tootsie roll sweet roll!", 
+                "Cheesecake lemon drops fruitcake!", 
+                "Cookie macaroon wafer candy canes!", 
+                "Sugar plum sweet roll bear claw!", 
+                "Cake halvah muffin jelly beans!",
+                "Lollipop carrot cake cake jelly cotton candy!",
+                "Marshmallow sweet bonbon lollipop pie apple pie!", 
+                "Cookie jujubes apple pie cupcake!"];
 
 var getString = function(){
   return testList[randomIndex(testList.length)];
