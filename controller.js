@@ -1,14 +1,3 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
 var timeTakenToFinish
 var wrongEntryCount = 0
 var correctEntryCount = 0
@@ -71,10 +60,6 @@ function displayString(string){
   console.log(string)
 }
 
-
-
-// IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-// EXISITING CODE BASE
 
 
 window.onload=function(){
